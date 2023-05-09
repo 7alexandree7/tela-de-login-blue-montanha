@@ -1,0 +1,265 @@
+* {
+    margin:0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-do-link: #e44e7bb7;
+    --cord-do-button: #16a1ef;
+    --branco: #fff;
+    --preto: #000;
+    --font-peso: font-weight:400;
+    --cor-de-fundo: #16a1ef;
+}
+
+
+html {
+    font-size: 62.5%;
+}  
+
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#container__img{
+background-image: url(./img/mountain-4694346.svg);
+width: 50%;
+height: 100vh;
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+}
+
+
+#container__box {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16a1ef;
+}
+
+.subtitulo__login {
+    font-size: 3.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.box__conteudo {
+    background-color: var(--branco);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    padding: 2rem;
+
+}
+
+.form__container {
+    width: 60%;
+}
+
+.input__box {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #16a1ef;
+    padding: 1.7rem;
+    display: block;
+    border-radius: 0.8rem;
+    color: var(--branco);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9rem;
+    cursor: pointer;
+    transition: transform 1s cubic-bezier(.45,.97,.68,2.48), opacity 1s;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.08);
+    opacity: 0.8;
+}
+
+input[type="email"] {
+    width: 100%;
+    display: inline-block;
+    padding:1.2rem;
+    outline: none;
+    border: none;
+}
+
+input[type="password"] {
+    width: 100%;
+    display: inline-block;
+    padding:1.2rem;
+    outline: none;
+    border:none
+}
+
+span {
+    margin-bottom: 1rem;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: #000000;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.f-50 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ancora__link{
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:var(--preto);
+    transition: 1s;
+}
+
+.ancora__link:hover {
+    color: #169fefc2;
+}
+
+.subtitulo__bottom {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: var(--font-peso);
+    color: var(--preto);
+    margin: 2.5rem 0;
+
+}
+
+.list__box {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+li {
+    width: 64px;
+    margin: 0 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+.logo {
+    width: 40px;
+}
+
+
+@media (max-width:1440px) {
+
+    body {
+        font-size: 2rem;
+    }
+
+    input[type="submit"] {
+        font-size: 2.2rem;
+    }
+
+    .subtitulo__login {
+        font-size: 4rem;
+    }
+
+    .subtitulo__bottom {
+        font-size: 3rem;
+    }
+
+    .paragrafo__login {
+        font-size: 2rem;
+    }
+
+    span {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .ancora__link {
+        font-size: 2rem;
+    }
+
+
+
+}
+
+
+@media (max-width:1089px) {
+
+    body {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .subtitulo__login {
+        font-size: 2.4rem;
+    }
+
+    .box__conteudo {
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    .remember label {
+        margin-right: 2rem;
+    }
+
+    .f-50 p {
+        margin-right: 2rem;
+    }
+}
+
+
+@media (max-width:700px) {
+
+
+
+
+    #container__img {
+        display: none;
+        background-color: var(--branco);
+        overflow: hidden;
+    }
+
+    #container__box {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--branco);
+    }
+}
